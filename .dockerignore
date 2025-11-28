@@ -1,0 +1,10 @@
+# keep the image slim
+__pycache__/
+*.pyc
+outputs/
+.vscode/
+.venv/
+.env
+.git
+.gitignore
+.DS_Store

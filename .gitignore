@@ -1,13 +1,16 @@
 # python
 .venv/
 __pycache__/
-*.pyc
-
-# data & models (kept out of git; reconstructed by scripts)
+outputs/
+*.png
+*.csv
+*.xlsx
 data/text/
 model/snapshots/
 model/embeddings/
-
-# OS/editor
+*.ipynb_checkpoints/
 .DS_Store
 .vscode/
+
+
+

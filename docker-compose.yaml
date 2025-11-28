@@ -1,0 +1,12 @@
+services:
+  satd:
+    build: .
+    image: satd-exp:latest
+    container_name: satd-exp
+    environment:
+      - MPLBACKEND=Agg
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    # Run a no-op by default; override with `docker compose run satd <cmd>`
+    command: ["python", "-c", "print('satd-exp container ready')"]
