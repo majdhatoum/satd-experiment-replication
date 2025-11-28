@@ -1,0 +1,8 @@
+# Global configuration (edit paths if needed)
+random_seed: 2025
+repos_file: data\ids\repo_list.txt
+balanced_csv: data\ids\balanced_sample.csv
+expert_dir: data\experts
+model_preds_csv: model\inference\preds_balanced_sample.csv
+snapshot_path: C:\models\satd\satd_detector.pt        # change to your local path
+embeddings_path: C:\models\satd\fasttext_issues_300.bin # change to your local path
