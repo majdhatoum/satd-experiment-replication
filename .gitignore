@@ -1,9 +1,13 @@
+# python
+.venv/
 __pycache__/
 *.pyc
-.venv/
-.env
+
+# data & models (kept out of git; reconstructed by scripts)
+data/text/
 model/snapshots/
 model/embeddings/
-data/text/
+
+# OS/editor
 .DS_Store
 .vscode/
