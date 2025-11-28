@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+model/snapshots/
+model/embeddings/
+data/text/
+.DS_Store
+.vscode/
