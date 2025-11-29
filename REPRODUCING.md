@@ -64,6 +64,8 @@ pip install -r requirements.txt
 ```
 
 ### Option B — Docker (no local Python needed)
+> The below bash loads and runs the **complete** experiment as we call all three scripts
+
 ```bash
 docker build -t satd-repl .
 # Windows PowerShell:
@@ -77,6 +79,8 @@ docker run --rm -v "$PWD:/work" -w /work satd-repl bash -lc \
    python analysis/build_gold_and_agreement.py && \
    python analysis/evaluate_and_plot.py"
 ```
+> In case you face issues such as **"Unable to find image `satd-repl:latest` locally"** 
+> Just build the image first using `docker build -t satd-repl .`
 
 ## 2) Required inputs
 
