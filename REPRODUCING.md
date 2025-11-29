@@ -82,9 +82,9 @@ docker run --rm -v "$PWD:/work" -w /work satd-repl bash -lc \
 > In case you face issues such as **"Unable to find image `satd-repl:latest` locally"** 
 > Just build the image first using `docker build -t satd-repl .`
 
-## 2) Required inputs
+## 2) Environment details (and configuration)
 
-### 2.1 Expert annotations → data/experts/
+### 2.1 Expert annotations → `data/experts/`
 
 Provide three spreadsheets (CSV or XLSX), one per expert. Header names are
 normalized automatically, but a clean template is:
@@ -112,7 +112,7 @@ SATD = `yes` and provides a recognizable type; any dropped rows (and reasons)
 are logged to `outputs/dropped_for_type_confusion.csv`
 
 
-## 3) Run the pipeline
+### 3.3 Run the pipeline
 
 ```bash
 
@@ -238,19 +238,6 @@ If you use this package or its results, please cite:
   **Empirical Software Engineering, 28(3), 65.**
 
 Please also cite the associated thesis when available.
-
----
-
-## 9) Releasing an archival snapshot
-
-1. Create a GitHub release (e.g., `v1.0.0`) once scripts and outputs are final.  
-2. Connect the repository to **Zenodo** to mint a DOI; add the badge to `README.md` and this file.  
-3. Ensure the release includes:
-   - `analysis/`, `docs/`, `requirements*.txt`, `Dockerfile`, `.dockerignore`
-   - `outputs/` with de-identified labels and generated figures
-   - `data/ids/` plus deterministic reconstruction scripts
-   - **No** license-restricted raw text
-4. Verify the release rebuilds end-to-end by following Sections 1–5 in a clean environment.
 
 ---
 
