@@ -36,7 +36,6 @@ docs/
 annotation_guideline.md # 2-page rater guideline
 consent_expert.md # participant information & consent
 
-REPRODUCING.md
 requirements.txt
 requirements.lock.txt # exact versions used in the paper run
 Dockerfile
