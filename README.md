@@ -1,4 +1,4 @@
-# SATD experiment replication - Reproducing the SATD Experiment
+# Experts vs. AI: A Paired Evaluation of Self-Admitted Technical Debt Detection and Classification Across Four Different Artifacts - Reproducing the SATD Experiment
 
 This repository contains all artefacts to reproduce the study comparing MT-TEXT-CNN
 with expert judgment on SATD detection and typing across multiple sources. 
